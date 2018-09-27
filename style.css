@@ -1,43 +1,7 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  font-size: 1em;
-  font-weight: normal;
-}
-
-body, html {
-  height: 100%;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.clear-fix {
-  clear: both;
-}
-
 body {
   background: #363636 url(img/lodyas.png);
   font-family: Poppins, sans-serif;
   font-weight: 300;
-}
-
-aside {
-  width: 20%;
-  height: 100%;
-  float: left;
-  padding: 20px;
-  padding-bottom: 50px;
-  overflow: scroll;
-  background: rgba(255,255,255,.3);
 }
 
 section {
@@ -52,7 +16,7 @@ section {
 }
 
 button {
-  background: #FFDB42;
+  background: #ffdb42;
   border: none;
   border-radius: 7px;
   display: block;
@@ -68,7 +32,8 @@ button:active {
   background: #dbba39;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   font-family: Comfortaa, cursive;
   font-weight: bold;
@@ -77,13 +42,15 @@ h1, h2 {
   clear: both;
 }
 
-select, input {
+select,
+input {
   border: none;
   padding: 2px;
   border-radius: 2px;
 }
 
-select:focus, input:focus {
+select:focus,
+input:focus {
   outline-color: #000;
   outline-width: 2px;
 }
@@ -95,14 +62,15 @@ select:focus, input:focus {
   font-weight: bold;
 }
 
-#tempo-change #tempo-value{
+#tempo-change #tempo-value {
   width: 3em;
   text-align: right;
-  background: rgba(255,255,255,.1);
+  background: rgba(255, 255, 255, 0.1);
   margin-bottom: 5px;
 }
 
-#reset, #random-button {
+#reset,
+#random-button {
   width: 60%;
   margin-bottom: 5px;
 }
@@ -121,17 +89,39 @@ select:focus, input:focus {
 }
 
 @keyframes rainbow {
-  0% {background-color: hsl(0, 80%, 50%);}
-  10% {background-color: hsl(30, 80%, 50%);}
-  20% {background-color: hsl(60, 80%, 50%);}
-  30% {background-color: hsl(90, 80%, 50%);}
-  40% {background-color: hsl(120, 80%, 50%);}
-  50% {background-color: hsl(150, 80%, 50%);}
-  60% {background-color: hsl(180, 80%, 50%);}
-  70% {background-color: hsl(210, 80%, 50%);}
-  80% {background-color: hsl(240, 80%, 50%);}
-  90% {background-color: hsl(270, 80%, 50%);}
-  100% {background-color: hsl(300, 80%, 50%);}
+  0% {
+    background-color: hsl(0, 80%, 50%);
+  }
+  10% {
+    background-color: hsl(30, 80%, 50%);
+  }
+  20% {
+    background-color: hsl(60, 80%, 50%);
+  }
+  30% {
+    background-color: hsl(90, 80%, 50%);
+  }
+  40% {
+    background-color: hsl(120, 80%, 50%);
+  }
+  50% {
+    background-color: hsl(150, 80%, 50%);
+  }
+  60% {
+    background-color: hsl(180, 80%, 50%);
+  }
+  70% {
+    background-color: hsl(210, 80%, 50%);
+  }
+  80% {
+    background-color: hsl(240, 80%, 50%);
+  }
+  90% {
+    background-color: hsl(270, 80%, 50%);
+  }
+  100% {
+    background-color: hsl(300, 80%, 50%);
+  }
 }
 
 #options {
@@ -152,7 +142,8 @@ select:focus, input:focus {
   width: auto;
 }
 
-#octave-menu, #wave-menu {
+#octave-menu,
+#wave-menu {
   width: 55%;
 }
 
@@ -160,7 +151,8 @@ select:focus, input:focus {
   text-align: center;
 }
 
-#export-import button, #export-import input {
+#export-import button,
+#export-import input {
   display: inline-block;
 }
 
@@ -189,7 +181,7 @@ select:focus, input:focus {
   position: relative;
   border-radius: 2px;
   margin-bottom: 5px;
-  background: rgba(255,255,255,.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 10px;
 }
 
@@ -201,11 +193,11 @@ select:focus, input:focus {
   background-color: #555;
   color: #bbb;
   font-weight: lighter;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .saved-state button:active {
-  background: #F43030;
+  background: #f43030;
 }
 
 #clear-saves {
@@ -215,7 +207,7 @@ select:focus, input:focus {
 }
 
 #clear-saves:active {
-  background: #F43030;
+  background: #f43030;
 }
 
 footer {
@@ -268,9 +260,9 @@ main {
   border: 1px solid #1e1e1e;
   width: calc(80% / 15);
   padding: 2px;
-  background: rgba(255,255,255,.3);
+  background: rgba(255, 255, 255, 0.3);
   position: relative;
-  font-size: .8em;
+  font-size: 0.8em;
   max-width: 4.5px;
 }
 
@@ -322,11 +314,11 @@ main {
   text-align: center;
   width: 6.667%;
   padding: 1% 0;
-  background: rgba(255,255,255,.3);
+  background: rgba(255, 255, 255, 0.3);
   border: 2px solid #333;
   font-family: Poppins, sans-serif;
   font-weight: lighter;
-  font-size: .75em;
+  font-size: 0.75em;
   color: #000;
   float: left;
   height: 100%;
@@ -355,12 +347,12 @@ main {
   border: 10px outset #eee;
   border-top: none;
   background: #fff;
-  color: #9A9A9A;
+  color: #9a9a9a;
   vertical-align: bottom;
   text-align: center;
 }
 
-.black-key{
+.black-key {
   width: calc(75% / 8);
   height: 60%;
   background-color: black;
@@ -378,38 +370,38 @@ main {
 }
 
 #piano-box .pressed {
-  color: #8C0000;
+  color: #8c0000;
   background-color: red;
   border-color: #e00000;
   border-style: inset;
   border-top: none;
 }
 
-#c-sharp{
+#c-sharp {
   position: absolute;
   top: 2px;
   left: 7.8125%;
 }
 
-#d-sharp{
+#d-sharp {
   position: absolute;
   top: 2px;
   left: calc(7.8125% * 2.6);
 }
 
-#f-sharp{
+#f-sharp {
   position: absolute;
   top: 2px;
   left: calc(7.8125% * 5.8);
 }
 
-#g-sharp{
+#g-sharp {
   position: absolute;
   top: 2px;
   left: calc(7.8125% * 7.4);
 }
 
-#a-sharp{
+#a-sharp {
   position: absolute;
   top: 2px;
   left: calc(7.8125% * 9);
@@ -419,45 +411,50 @@ main {
   display: none;
 }
 
-#piano-slider{
+#piano-slider {
   -webkit-appearance: slider-vertical;
 }
 
-.drum-slider{
+.drum-slider {
   -webkit-appearance: slider-vertical;
 }
 
-.mute-button{
+.mute-button {
   float: right;
   width: 90%;
 }
 
-#play-pause{
+#play-pause {
   position: relative;
   margin: 0 auto 15px;
   width: 40%;
 }
 
-#banana-spiral{
-    transition: transform;
-    width: 100%;
-    height: 100%;
+#banana-spiral {
+  transition: transform;
+  width: 100%;
+  height: 100%;
 }
 
-#banana-spiral.spinning{
-    animation-name: spin;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+#banana-spiral.spinning {
+  animation-name: spin;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes spin{
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-#playhead, #playhead-paused{
-  position:absolute;
+#playhead,
+#playhead-paused {
+  position: absolute;
   bottom: 42%;
   left: 37%;
   width: auto;
@@ -478,8 +475,9 @@ main {
   text-align: center;
 }
 
-#au h1, #au h2 {
-  color: #FFDB42;
+#au h1,
+#au h2 {
+  color: #ffdb42;
 }
 
 #au h1 {
@@ -491,12 +489,12 @@ main {
   font-size: 1.6em;
 }
 
-#au img{
+#au img {
   width: 100%;
 }
 
 #au a {
-  color: #FFDB42;
+  color: #ffdb42;
   text-decoration: none;
 }
 
@@ -529,7 +527,7 @@ main {
   width: 100%;
   text-align: center;
   margin-top: 5%;
-  color: #FFDB42;
+  color: #ffdb42;
 }
 
 #browser-error img {
@@ -538,7 +536,7 @@ main {
 }
 
 #browser-error a {
-  color: #FFDB42;
+  color: #ffdb42;
   text-decoration: none;
 }
 

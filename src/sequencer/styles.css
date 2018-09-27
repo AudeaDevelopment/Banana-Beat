@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background: #363636 url(lodyas.png);
+  position: fixed;
+}
+
+.sequencer-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3vw;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  top: 2vw;
+  right: 2vw;
+}
+
+.sequencer-row {
+  position: absolute;
+  display: flex;
+  width: 90vw;
+  height: 99px;
+  overflow: visible;
+  pointer-events: auto;
+  transform-origin: 50% 50% 0px;
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.beat {
+  background-color: rgba(120, 120, 120, 0.4);
+  border: 2px solid #363636;
+  width: calc(90vw / 16);
+}
